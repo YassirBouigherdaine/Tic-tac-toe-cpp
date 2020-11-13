@@ -50,7 +50,6 @@ int Input_matrix()
 
 			if (matrix[0][0] == 'X' || matrix[0][0] == 'O')
 			{
-				std::cout << "\nThis cell is not empty try again\n";
 				return 0;
 			}
 			else
@@ -65,7 +64,6 @@ int Input_matrix()
 
 			if (matrix[0][1] == 'X' || matrix[0][1] == 'O')
 			{
-				std::cout << "\nThis cell is not empty try again\n";
 				return 0;
 			}
 			else
@@ -80,7 +78,6 @@ int Input_matrix()
 
 			if (matrix[0][2] == 'X' || matrix[0][2] == 'O')
 			{
-				std::cout << "\nThis cell is not empty try again\n";
 				return 0;
 			}
 			else
@@ -95,7 +92,6 @@ int Input_matrix()
 
 			if (matrix[1][0] == 'X' || matrix[1][0] == 'O')
 			{
-				std::cout << "\nThis cell is not empty try again\n";
 				return 0;
 			}
 			else
@@ -110,7 +106,6 @@ int Input_matrix()
 
 			if (matrix[1][1] == 'X' || matrix[1][1] == 'O')
 			{
-				std::cout << "\nThis cell is not empty try again\n";
 				return 0;
 			}
 			else
@@ -125,7 +120,6 @@ int Input_matrix()
 
 			if (matrix[1][2] == 'X' || matrix[1][2] == 'O')
 			{
-				std::cout << "\nThis cell is not empty try again\n";
 				return 0;
 			}
 			else
@@ -140,7 +134,6 @@ int Input_matrix()
 
 			if (matrix[2][0] == 'X' || matrix[2][0] == 'O')
 			{
-				std::cout << "\nThis cell is not empty try again\n";
 				return 0;
 			}
 			else
@@ -155,7 +148,6 @@ int Input_matrix()
 
 			if (matrix[2][1] == 'X' || matrix[2][1] == 'O')
 			{
-				std::cout << "\nThis cell is not empty try again\n";
 				return 0;
 			}
 			else
@@ -170,8 +162,7 @@ int Input_matrix()
 
 			if (matrix[2][2] == 'X' || matrix[2][2] == 'O')
 			{
-				std::cout << "\nThis cell is not empty try again\n";
-				
+				retutn 0;
 			}
 			else
 			{
@@ -238,7 +229,16 @@ void game()
 
 		if (!valid_input)
 		{
+			std::cout << "\nThis cell is not empty try again\n";
+			
 			turn--;
+			
+			system("pause");
+
+			system("cls");
+
+			draw_board();
+			
 			continue;
 		}
 
